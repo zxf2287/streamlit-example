@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+    <meta charset='UTF-8'>
+</head>
+
+<body bgcolor=#F5F5F5></body>
+<center>
+    <div id='aec9ea8827e14bfaa908090d5a8a4657'
+        style="width: 1380px;height:400px;background:#FFFFFF; margin:0px; padding:6px;margin-top:6px; auto"></div>
+</center>
+
+<script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+
+<body>
+    <div id="aec9ea8827e14bfaa908090d5a8a4657"></div>
+    <script>
+        var chart_aec9ea8827e14bfaa908090d5a8a4657 = echarts.init(
+            document.getElementById('aec9ea8827e14bfaa908090d5a8a4657'), 'white', { renderer: 'canvas' });
+        var option_aec9ea8827e14bfaa908090d5a8a4657 = {
+            "animation": true,
+            "animationThreshold": 2000,
+            "animationDuration": 1000,
+            "animationEasing": "cubicOut",
+            "animationDelay": 0,
+            "animationDurationUpdate": 300,
+            "animationEasingUpdate": "cubicOut",
+            "animationDelayUpdate": 0,
+            //"color": ["#43A3BD","#60B2C8","#8CC8D8","#BDE0E9","#D6ECF2","#E8F5F8","#F3FAFC"],
+            "series": [
+                {
+                    "type": "pie",
+                    "clockwise": true,
+                    "data": [
+                        {
+                            "name": "销售一部",
+                            "value": 74652
+                        },
+                        {
+                            "name": "销售二部",
+                            "value": 60988
+                        },
+                        {
+                            "name": "销售三部",
+                            "value": 41261
+                        },
+                        {
+                            "name": "销售四部",
+                            "value": 28673
+                        },
+                        {
+                            "name": "OEM事业部",
+                            "value": 15441
+                        }
+                    ],
+                    "radius": [
+                        "37%",
+                        "65%"
+                    ],
+                    "center": [
+                        "50%",
+                        "50%"
+                    ],
+                    "roseType": "radiu",
+                    "itemStyle": {
+                        "borderRadius": 5,
+                        "borderColor": '#fff',
+                        "borderWidth": 2
+                    },
+                    "label": {
+                        "show": 1,
+                        //"position": "top",
+                        "margin": 8,
+                        "formatter": "{b}：{c}单" + '\n' + "占比：{d}%"
+                    },
+                    "tooltip": {
+                        "show": true,
+                        "trigger": "item",
+                        "triggerOn": "mousemove|click",
+                        "axisPointer": {
+                            "type": "line"
+                        },
+                        "showContent": true,
+                        "alwaysShowContent": false,
+                        "showDelay": 0,
+                        "hideDelay": 100,
+                        "formatter": "单量占比 <br/>{b}: {c} ({d}%)",
+                        "textStyle": {
+                            "fontSize": 14
+                        },
+                        "borderWidth": 0,
+                        "padding": 5
+                    },
+                    "rippleEffect": {
+                        "show": true,
+                        "brushType": "stroke",
+                        "scale": 2.5,
+                        "period": 4
+                    }
+                }
+            ],
+            "legend": [
+                {
+                    "data": [
+                        "销售一部",
+                        "销售二部",
+                        "销售三部",
+                        "销售四部",
+                        "OEM事业部"
+                    ],
+                    "selected": {},
+                    "type": "scroll",
+                    "show": true,
+                    "left": "5%",
+                    "top": "60%",
+                    "orient": "vertical",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "itemWidth": 25,
+                    "itemHeight": 14
+                }
+            ],
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "title": [
+                {
+                    "text": "销售部-单量占比",
+                    "subtext": "单位：单",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "textStyle": {
+                        "color": "#434343",
+                        "fontSize": 18
+                    },
+                    subtextStyle: {
+                        color: '#CCCCCC',
+                        fontSize: 12
+                    },
+                }
+            ]
+        };
+        chart_aec9ea8827e14bfaa908090d5a8a4657.setOption(option_aec9ea8827e14bfaa908090d5a8a4657);
+    </script>
+</body>
+
+</html>

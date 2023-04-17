@@ -1,0 +1,3726 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Awesome-pyecharts</title>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2/dist/echarts-wordcloud.min.js"></script>
+</head>
+
+<body bgcolor=#F5F5F5></body>
+<center>
+    <div id='9c4e6058b3da43648b9f5f4c1236cc16'
+        style="width: 1380px;height:600px;background:#FFFFFF; margin:0px; padding:6px;margin-top:6px; auto"></div>
+</center>
+
+<body style="height: 100%; width:100%">
+    <div id="9c4e6058b3da43648b9f5f4c1236cc16" style="height: 100%;width: 100%"></div>
+    <script type="text/javascript">
+        var dom = document.getElementById("9c4e6058b3da43648b9f5f4c1236cc16");
+        var myChart = echarts.init(dom);
+        var option;
+        var app = {};
+        //用来存储数据
+        var jsonlist = [
+            {
+                "name": "NO.FZ56592",
+                "value": 27284,
+            },
+            {
+                "name": "NO.YZC4293",
+                "value": 27065,
+            },
+            {
+                "name": "NO.FFS44223",
+                "value": 21732,
+            },
+            {
+                "name": "NO.YZC1127",
+                "value": 19640,
+            },
+            {
+                "name": "NO.NTD40410",
+                "value": 15456,
+            },
+            {
+                "name": "NO.HC99064",
+                "value": 13828,
+            },
+            {
+                "name": "NO.HC62593",
+                "value": 12013,
+            },
+            {
+                "name": "NO.FFS59630",
+                "value": 11254,
+            },
+            {
+                "name": "NO.HC8390",
+                "value": 10875,
+            },
+            {
+                "name": "NO.XXM10405",
+                "value": 9679,
+            },
+            {
+                "name": "NO.DSU50521",
+                "value": 9485,
+            },
+            {
+                "name": "NO.YZC62937",
+                "value": 8315,
+            },
+            {
+                "name": "NO.HF08518",
+                "value": 7978,
+            },
+            {
+                "name": "NO.ZD86988",
+                "value": 7675,
+            },
+            {
+                "name": "NO.BQY0481",
+                "value": 7659,
+            },
+            {
+                "name": "NO.LFMX23771",
+                "value": 7225,
+            },
+            {
+                "name": "NO.LK19986",
+                "value": 6769,
+            },
+            {
+                "name": "NO.LDRM84878",
+                "value": 6081,
+            },
+            {
+                "name": "NO.HC51696",
+                "value": 5893,
+            },
+            {
+                "name": "NO.XXM63198",
+                "value": 5716,
+            },
+            {
+                "name": "NO.FZ66898",
+                "value": 5552,
+            },
+            {
+                "name": "NO.MB89910",
+                "value": 5422,
+            },
+            {
+                "name": "NO.BQY90072",
+                "value": 5320,
+            },
+            {
+                "name": "NO.SNN12543",
+                "value": 5106,
+            },
+            {
+                "name": "NO.XXM75098",
+                "value": 5105,
+            },
+            {
+                "name": "NO.XXM13977",
+                "value": 5047,
+            },
+            {
+                "name": "NO.XDNE96913",
+                "value": 5025,
+            },
+            {
+                "name": "NO.JMT37423",
+                "value": 5011,
+            },
+            {
+                "name": "NO.XXM1189",
+                "value": 4985,
+            },
+            {
+                "name": "NO.JFQ09260",
+                "value": 4602,
+            },
+            {
+                "name": "NO.XDNE26038",
+                "value": 4454,
+            },
+            {
+                "name": "NO.HS07061",
+                "value": 4432,
+            },
+            {
+                "name": "NO.YZC1141",
+                "value": 4414,
+            },
+            {
+                "name": "NO.XXM77924",
+                "value": 4220,
+            },
+            {
+                "name": "NO.BD43394",
+                "value": 4132,
+            },
+            {
+                "name": "NO.YZC9338",
+                "value": 4120,
+            },
+            {
+                "name": "NO.LK19979",
+                "value": 4025,
+            },
+            {
+                "name": "NO.YZC1165",
+                "value": 3779,
+            },
+            {
+                "name": "NO.LK60230",
+                "value": 3711,
+            },
+            {
+                "name": "NO.BD43288",
+                "value": 3669,
+            },
+            {
+                "name": "NO.BQY7441",
+                "value": 3382,
+            },
+            {
+                "name": "NO.LDRM60834",
+                "value": 3329,
+            },
+            {
+                "name": "NO.YZC9314",
+                "value": 3309,
+            },
+            {
+                "name": "NO.XXM8516",
+                "value": 3242,
+            },
+            {
+                "name": "NO.VHA48566",
+                "value": 3218,
+            },
+            {
+                "name": "NO.BQY7434",
+                "value": 3212,
+            },
+            {
+                "name": "NO.BD44490",
+                "value": 3184,
+            },
+            {
+                "name": "NO.XXM23990",
+                "value": 3119,
+            },
+            {
+                "name": "NO.DMS15677",
+                "value": 3101,
+            },
+            {
+                "name": "NO.XXM4434",
+                "value": 3034,
+            },
+            {
+                "name": "NO.BQY2958",
+                "value": 3004,
+            },
+            {
+                "name": "NO.HC63699",
+                "value": 2979,
+            },
+            {
+                "name": "NO.DSY69844",
+                "value": 2958,
+            },
+            {
+                "name": "NO.XXM7772",
+                "value": 2937,
+            },
+            {
+                "name": "NO.BQY2941",
+                "value": 2899,
+            },
+            {
+                "name": "NO.JFQ02681",
+                "value": 2886,
+            },
+            {
+                "name": "NO.HC62838",
+                "value": 2872,
+            },
+            {
+                "name": "NO.FZ76866",
+                "value": 2825,
+            },
+            {
+                "name": "NO.JLS27646",
+                "value": 2787,
+            },
+            {
+                "name": "NO.BQY2910",
+                "value": 2768,
+            },
+            {
+                "name": "NO.XXM21941",
+                "value": 2646,
+            },
+            {
+                "name": "NO.HS02209",
+                "value": 2622,
+            },
+            {
+                "name": "NO.FZ30496",
+                "value": 2606,
+            },
+            {
+                "name": "NO.HS52228",
+                "value": 2581,
+            },
+            {
+                "name": "NO.HF08525",
+                "value": 2578,
+            },
+            {
+                "name": "NO.FZ82102",
+                "value": 2559,
+            },
+            {
+                "name": "NO.YLY71229",
+                "value": 2547,
+            },
+            {
+                "name": "NO.XYZ36075",
+                "value": 2502,
+            },
+            {
+                "name": "NO.BQY1099",
+                "value": 2475,
+            },
+            {
+                "name": "NO.BQY2965",
+                "value": 2442,
+            },
+            {
+                "name": "NO.FZ15193",
+                "value": 2421,
+            },
+            {
+                "name": "NO.LK27721",
+                "value": 2404,
+            },
+            {
+                "name": "NO.CX16985",
+                "value": 2366,
+            },
+            {
+                "name": "NO.BQY1886-2",
+                "value": 2357,
+            },
+            {
+                "name": "NO.SNN09225",
+                "value": 2355,
+            },
+            {
+                "name": "NO.JLS62630",
+                "value": 2351,
+            },
+            {
+                "name": "NO.BD43271",
+                "value": 2325,
+            },
+            {
+                "name": "NO.MB43169",
+                "value": 2319,
+            },
+            {
+                "name": "NO.JLS53010",
+                "value": 2303,
+            },
+            {
+                "name": "NO.BD59517",
+                "value": 2196,
+            },
+            {
+                "name": "NO.BQY74930",
+                "value": 2158,
+            },
+            {
+                "name": "NO.SD80566",
+                "value": 2137,
+            },
+            {
+                "name": "NO.JLS18781",
+                "value": 2120,
+            },
+            {
+                "name": "NO.HS32640",
+                "value": 2102,
+            },
+            {
+                "name": "NO.BZT71816",
+                "value": 2021,
+            },
+            {
+                "name": "WLLST0001",
+                "value": 2011,
+            },
+            {
+                "name": "NO.FFS96616",
+                "value": 2008,
+            },
+            {
+                "name": "NO.JLS62005",
+                "value": 2003,
+            },
+            {
+                "name": "NO.JMT37652",
+                "value": 1990,
+            },
+            {
+                "name": "NO.BS36495",
+                "value": 1988,
+            },
+            {
+                "name": "NO.HC7533",
+                "value": 1980,
+            },
+            {
+                "name": "NO.MB43183",
+                "value": 1966,
+            },
+            {
+                "name": "NO.LK27745",
+                "value": 1914,
+            },
+            {
+                "name": "NO.HC84465",
+                "value": 1855,
+            },
+            {
+                "name": "NO.BQY66690",
+                "value": 1721,
+            },
+            {
+                "name": "NO.XXM23672",
+                "value": 1695,
+            },
+            {
+                "name": "NO.LFMX23788",
+                "value": 1670,
+            },
+            {
+                "name": "NO.LK61237",
+                "value": 1664,
+            },
+            {
+                "name": "NO.FZ56370",
+                "value": 1656,
+            },
+            {
+                "name": "NO.BSY86100",
+                "value": 1646,
+            },
+            {
+                "name": "NO.FZ15179",
+                "value": 1618,
+            },
+            {
+                "name": "NO.YZC9345",
+                "value": 1572,
+            },
+            {
+                "name": "NO.HM43318",
+                "value": 1547,
+            },
+            {
+                "name": "NO.BZT37911",
+                "value": 1519,
+            },
+            {
+                "name": "NO.LFMX66157",
+                "value": 1504,
+            },
+            {
+                "name": "NO.BQY74985",
+                "value": 1498,
+            },
+            {
+                "name": "NO.XDNE26021",
+                "value": 1443,
+            },
+            {
+                "name": "NO.HS52143",
+                "value": 1440,
+            },
+            {
+                "name": "NO.FZ44210",
+                "value": 1437,
+            },
+            {
+                "name": "NO.YZC9307",
+                "value": 1433,
+            },
+            {
+                "name": "NO.HC38444",
+                "value": 1411,
+            },
+            {
+                "name": "NO.HC09444",
+                "value": 1406,
+            },
+            {
+                "name": "NO.SNN75418",
+                "value": 1400,
+            },
+            {
+                "name": "NO.FZ47613",
+                "value": 1356,
+            },
+            {
+                "name": "NO.LK27738",
+                "value": 1276,
+            },
+            {
+                "name": "NO.XF52082",
+                "value": 1259,
+            },
+            {
+                "name": "NO.XXM23631",
+                "value": 1258,
+            },
+            {
+                "name": "NO.YZC64393",
+                "value": 1254,
+            },
+            {
+                "name": "NO.XXM8328",
+                "value": 1235,
+            },
+            {
+                "name": "NO.YLY74824",
+                "value": 1220,
+            },
+            {
+                "name": "NO.YLY74862",
+                "value": 1209,
+            },
+            {
+                "name": "NO.XXM70468",
+                "value": 1184,
+            },
+            {
+                "name": "NO.XXM60319",
+                "value": 1156,
+            },
+            {
+                "name": "NO.XDNE44520",
+                "value": 1131,
+            },
+            {
+                "name": "NO.PT57377",
+                "value": 1130,
+            },
+            {
+                "name": "NO.HC5920",
+                "value": 1099,
+            },
+            {
+                "name": "NO.LFMX66140",
+                "value": 1095,
+            },
+            {
+                "name": "NO.JMT16800",
+                "value": 1081,
+            },
+            {
+                "name": "NO.HM26243",
+                "value": 1076,
+            },
+            {
+                "name": "NO.XXM63020",
+                "value": 1076,
+            },
+            {
+                "name": "NO.DMS51559",
+                "value": 1066,
+            },
+            {
+                "name": "NO.XXM63037",
+                "value": 1063,
+            },
+            {
+                "name": "NO.FZ56608",
+                "value": 1062,
+            },
+            {
+                "name": "NO.LFMX66133",
+                "value": 1056,
+            },
+            {
+                "name": "NO.XF60520",
+                "value": 1054,
+            },
+            {
+                "name": "NO.SNN66461",
+                "value": 1050,
+            },
+            {
+                "name": "NO.ZYF20210-1",
+                "value": 1049,
+            },
+            {
+                "name": "NO.HC07532",
+                "value": 1045,
+            },
+            {
+                "name": "NO.BZT75081",
+                "value": 1043,
+            },
+            {
+                "name": "NO.MB95732",
+                "value": 1043,
+            },
+            {
+                "name": "NO.FZ56233",
+                "value": 1040,
+            },
+            {
+                "name": "NO.FZ82119",
+                "value": 1034,
+            },
+            {
+                "name": "NO.BFQ35528",
+                "value": 1033,
+            },
+            {
+                "name": "NO.HC 302 728",
+                "value": 1033,
+            },
+            {
+                "name": "NO.HM21040",
+                "value": 1029,
+            },
+            {
+                "name": "NO.SNN12567",
+                "value": 1025,
+            },
+            {
+                "name": "NO.XYZ22443",
+                "value": 1025,
+            },
+            {
+                "name": "NO.SNN75425",
+                "value": 1020,
+            },
+            {
+                "name": "NO.CJ67635",
+                "value": 1019,
+            },
+            {
+                "name": "NO.LFMX66126",
+                "value": 1017,
+            },
+            {
+                "name": "NO.XXM24457",
+                "value": 1012,
+            },
+            {
+                "name": "NO.QFB84809",
+                "value": 1000,
+            },
+            {
+                "name": "NO.HS52785",
+                "value": 996,
+            },
+            {
+                "name": "NO.BQY90102",
+                "value": 990,
+            },
+            {
+                "name": "NO.ZX73537",
+                "value": 987,
+            },
+            {
+                "name": "NO.XXM62511",
+                "value": 976,
+            },
+            {
+                "name": "NO.XXM62528",
+                "value": 972,
+            },
+            {
+                "name": "NO.BQY90096",
+                "value": 970,
+            },
+            {
+                "name": "NO.XXM62504",
+                "value": 966,
+            },
+            {
+                "name": "NO.BQY74978",
+                "value": 963,
+            },
+            {
+                "name": "NO.BDI68731",
+                "value": 962,
+            },
+            {
+                "name": "NO.BQY92885",
+                "value": 960,
+            },
+            {
+                "name": "NO.NTD40229",
+                "value": 939,
+            },
+            {
+                "name": "NO.DMS97149",
+                "value": 914,
+            },
+            {
+                "name": "NO.BQY74947",
+                "value": 913,
+            },
+            {
+                "name": "NO.BZT55489",
+                "value": 910,
+            },
+            {
+                "name": "NO.XXM1202",
+                "value": 909,
+            },
+            {
+                "name": "NO.GP33234",
+                "value": 907,
+            },
+            {
+                "name": "NO.BQY77900",
+                "value": 903,
+            },
+            {
+                "name": "NO.VHA48559",
+                "value": 896,
+            },
+            {
+                "name": "NO.PT86469",
+                "value": 891,
+            },
+            {
+                "name": "NO.BQY74954",
+                "value": 877,
+            },
+            {
+                "name": "NO.FZ47712",
+                "value": 871,
+            },
+            {
+                "name": "NO.HM44803",
+                "value": 864,
+            },
+            {
+                "name": "NO.XXM1196",
+                "value": 852,
+            },
+            {
+                "name": "NO.BQY74961",
+                "value": 823,
+            },
+            {
+                "name": "NO.HS33180",
+                "value": 822,
+            },
+            {
+                "name": "NO.BD98074",
+                "value": 819,
+            },
+            {
+                "name": "NO.YZC40485",
+                "value": 817,
+            },
+            {
+                "name": "NO.LFQ45633",
+                "value": 816,
+            },
+            {
+                "name": "NO.FZ15155",
+                "value": 811,
+            },
+            {
+                "name": "NO.FZ15186",
+                "value": 807,
+            },
+            {
+                "name": "NO.FZ15162",
+                "value": 792,
+            },
+            {
+                "name": "NO.HC61886",
+                "value": 790,
+            },
+            {
+                "name": "NO.LK84694",
+                "value": 785,
+            },
+            {
+                "name": "NO.XF18026",
+                "value": 782,
+            },
+            {
+                "name": "NO.HC51689",
+                "value": 774,
+            },
+            {
+                "name": "NO.XDNE26045",
+                "value": 770,
+            },
+            {
+                "name": "NO.XXM30816",
+                "value": 770,
+            },
+            {
+                "name": "NO.FZ45886",
+                "value": 761,
+            },
+            {
+                "name": "NO.CX55212",
+                "value": 761,
+            },
+            {
+                "name": "NO.JLS09949",
+                "value": 751,
+            },
+            {
+                "name": "NO.BQY92892",
+                "value": 723,
+            },
+            {
+                "name": "NO.XF52105",
+                "value": 713,
+            },
+            {
+                "name": "NO.JLS99194",
+                "value": 712,
+            },
+            {
+                "name": "NO.LDRM28421",
+                "value": 705,
+            },
+            {
+                "name": "NO.MMM74878",
+                "value": 700,
+            },
+            {
+                "name": "NO.MMM74854",
+                "value": 700,
+            },
+            {
+                "name": "NO.BQY74992",
+                "value": 700,
+            },
+            {
+                "name": "NO.JLS09925",
+                "value": 700,
+            },
+            {
+                "name": "NO.LK84687",
+                "value": 697,
+            },
+            {
+                "name": "NO.ZD83024",
+                "value": 682,
+            },
+            {
+                "name": "NO.YZC64386",
+                "value": 681,
+            },
+            {
+                "name": "NO.LK84670",
+                "value": 677,
+            },
+            {
+                "name": "NO.FFS44582",
+                "value": 671,
+            },
+            {
+                "name": "NO.LDRM28407",
+                "value": 662,
+            },
+            {
+                "name": "NO.SLK96180",
+                "value": 661,
+            },
+            {
+                "name": "NO.SNN12154",
+                "value": 656,
+            },
+            {
+                "name": "NO.DSY69769",
+                "value": 655,
+            },
+            {
+                "name": "NO.MAZO87138",
+                "value": 653,
+            },
+            {
+                "name": "NO.LK84663",
+                "value": 651,
+            },
+            {
+                "name": "NO.FZ23207",
+                "value": 649,
+            },
+            {
+                "name": "NO.XXM22903",
+                "value": 648,
+            },
+            {
+                "name": "NO.LDRM84885",
+                "value": 646,
+            },
+            {
+                "name": "NO.JLS53034",
+                "value": 645,
+            },
+            {
+                "name": "NO.XXM9261-1",
+                "value": 640,
+            },
+            {
+                "name": "NO.XXM16947",
+                "value": 630,
+            },
+            {
+                "name": "NO.BQY75005",
+                "value": 627,
+            },
+            {
+                "name": "NO.BZT67765",
+                "value": 624,
+            },
+            {
+                "name": "NO.BQY90522",
+                "value": 620,
+            },
+            {
+                "name": "NO.XDNE58305",
+                "value": 617,
+            },
+            {
+                "name": "NO.LDRM28414",
+                "value": 615,
+            },
+            {
+                "name": "NO.MB42872",
+                "value": 615,
+            },
+            {
+                "name": "NO.FZ90481",
+                "value": 614,
+            },
+            {
+                "name": "NO.HS51450",
+                "value": 613,
+            },
+            {
+                "name": "NO.YXY46852",
+                "value": 602,
+            },
+            {
+                "name": "NO.XXM66959",
+                "value": 597,
+            },
+            {
+                "name": "NO.BDI80016",
+                "value": 593,
+            },
+            {
+                "name": "NO.BD96715",
+                "value": 590,
+            },
+            {
+                "name": "NO.ZX54741",
+                "value": 589,
+            },
+            {
+                "name": "NO.FZ16886",
+                "value": 589,
+            },
+            {
+                "name": "NO.YZC9321",
+                "value": 587,
+            },
+            {
+                "name": "NO.FFS87503",
+                "value": 580,
+            },
+            {
+                "name": "NO.MAZO68038",
+                "value": 578,
+            },
+            {
+                "name": "NO.BD96821",
+                "value": 572,
+            },
+            {
+                "name": "NO.HS50828",
+                "value": 568,
+            },
+            {
+                "name": "NO.XXM16954",
+                "value": 567,
+            },
+            {
+                "name": "NO.BFQ87220",
+                "value": 560,
+            },
+            {
+                "name": "NO.MB97953",
+                "value": 556,
+            },
+            {
+                "name": "NO.HFS70420",
+                "value": 556,
+            },
+            {
+                "name": "NO.JFQ02674",
+                "value": 548,
+            },
+            {
+                "name": "NO.HC84748",
+                "value": 547,
+            },
+            {
+                "name": "NO.FZ54499",
+                "value": 546,
+            },
+            {
+                "name": "NO.BD64485",
+                "value": 546,
+            },
+            {
+                "name": "NO.XXM91789",
+                "value": 539,
+            },
+            {
+                "name": "NO.DMS19030",
+                "value": 535,
+            },
+            {
+                "name": "NO.HS20589",
+                "value": 534,
+            },
+            {
+                "name": "NO.JLS52327",
+                "value": 533,
+            },
+            {
+                "name": "NO.XDNE26083",
+                "value": 532,
+            },
+            {
+                "name": "NO.XXM8347",
+                "value": 532,
+            },
+            {
+                "name": "NO.XXM8755",
+                "value": 531,
+            },
+            {
+                "name": "NO.JMT57001",
+                "value": 530,
+            },
+            {
+                "name": "NO.SNN09263",
+                "value": 527,
+            },
+            {
+                "name": "NO.MMM95435",
+                "value": 522,
+            },
+            {
+                "name": "NO.XXM6062",
+                "value": 522,
+            },
+            {
+                "name": "NO.PT86476",
+                "value": 521,
+            },
+            {
+                "name": "NO.UCM84779",
+                "value": 521,
+            },
+            {
+                "name": "NO.BS55267",
+                "value": 521,
+            },
+            {
+                "name": "NO.XDNE86742",
+                "value": 520,
+            },
+            {
+                "name": "NO.MMM95428",
+                "value": 519,
+            },
+            {
+                "name": "NO.MMM95411",
+                "value": 519,
+            },
+            {
+                "name": "NO.YXY41253",
+                "value": 515,
+            },
+            {
+                "name": "NO.XXM22149",
+                "value": 513,
+            },
+            {
+                "name": "NO.HC8662",
+                "value": 508,
+            },
+            {
+                "name": "NO.QF52204",
+                "value": 505,
+            },
+            {
+                "name": "NO.BYL40935",
+                "value": 502,
+            },
+            {
+                "name": "NO.MB34661",
+                "value": 502,
+            },
+            {
+                "name": "NO.LK15905",
+                "value": 500,
+            },
+            {
+                "name": "NO.FZ56400",
+                "value": 499,
+            },
+            {
+                "name": "NO.HC99088",
+                "value": 498,
+            },
+            {
+                "name": "NO.BQY7396",
+                "value": 498,
+            },
+            {
+                "name": "NO.XDNE59463",
+                "value": 495,
+            },
+            {
+                "name": "NO.FZ29497",
+                "value": 495,
+            },
+            {
+                "name": "NO.XXM55908",
+                "value": 494,
+            },
+            {
+                "name": "NO.FZ45374",
+                "value": 489,
+            },
+            {
+                "name": "NO.PT87152",
+                "value": 487,
+            },
+            {
+                "name": "NO.SD31929",
+                "value": 480,
+            },
+            {
+                "name": "NO.XXM76019",
+                "value": 478,
+            },
+            {
+                "name": "NO.HC62524",
+                "value": 477,
+            },
+            {
+                "name": "NO.BD44506",
+                "value": 477,
+            },
+            {
+                "name": "NO.JLS62739",
+                "value": 475,
+            },
+            {
+                "name": "NO.HC99033",
+                "value": 475,
+            },
+            {
+                "name": "NO.YZC64409",
+                "value": 475,
+            },
+            {
+                "name": "NO.XXM24754",
+                "value": 464,
+            },
+            {
+                "name": "NO.HS51443",
+                "value": 463,
+            },
+            {
+                "name": "NO.YXY42090",
+                "value": 459,
+            },
+            {
+                "name": "NO.BQY22118",
+                "value": 457,
+            },
+            {
+                "name": "NO.XXM23655",
+                "value": 456,
+            },
+            {
+                "name": "NO.BQY8470",
+                "value": 452,
+            },
+            {
+                "name": "NO.ZD86773",
+                "value": 452,
+            },
+            {
+                "name": "NO.SNN23983",
+                "value": 449,
+            },
+            {
+                "name": "NO.FZ56110",
+                "value": 448,
+            },
+            {
+                "name": "NO.YXY42106",
+                "value": 447,
+            },
+            {
+                "name": "NO.YLY74886",
+                "value": 445,
+            },
+            {
+                "name": "NO.YXY46203",
+                "value": 445,
+            },
+            {
+                "name": "NO.HC 302 711",
+                "value": 443,
+            },
+            {
+                "name": "NO.BMZM60155",
+                "value": 442,
+            },
+            {
+                "name": "NO.HC51542",
+                "value": 441,
+            },
+            {
+                "name": "NO.MAZO35603",
+                "value": 440,
+            },
+            {
+                "name": "NO.LFQ22453",
+                "value": 439,
+            },
+            {
+                "name": "NO.XXM21293",
+                "value": 437,
+            },
+            {
+                "name": "NO.QDQ52297",
+                "value": 437,
+            },
+            {
+                "name": "NO.XXM6055",
+                "value": 435,
+            },
+            {
+                "name": "NO.LDRM99156",
+                "value": 428,
+            },
+            {
+                "name": "NO.MB42674",
+                "value": 423,
+            },
+            {
+                "name": "NO.XXM41925",
+                "value": 423,
+            },
+            {
+                "name": "NO.CX67475",
+                "value": 422,
+            },
+            {
+                "name": "NO.BZT71960",
+                "value": 420,
+            },
+            {
+                "name": "NO.YXY37713",
+                "value": 419,
+            },
+            {
+                "name": "NO.HC9607",
+                "value": 416,
+            },
+            {
+                "name": "NO.SD93863",
+                "value": 413,
+            },
+            {
+                "name": "NO.SD93849",
+                "value": 411,
+            },
+            {
+                "name": "NO.YZC91574",
+                "value": 410,
+            },
+            {
+                "name": "NO.YZC84755",
+                "value": 409,
+            },
+            {
+                "name": "NO.HS40164",
+                "value": 408,
+            },
+            {
+                "name": "NO.HF91463",
+                "value": 407,
+            },
+            {
+                "name": "NO.BQY1204",
+                "value": 407,
+            },
+            {
+                "name": "NO.XXM7475",
+                "value": 405,
+            },
+            {
+                "name": "NO.FZ45909",
+                "value": 404,
+            },
+            {
+                "name": "NO.FZ21873",
+                "value": 404,
+            },
+            {
+                "name": "NO.FZ21088",
+                "value": 403,
+            },
+            {
+                "name": "NO.ZX54369",
+                "value": 401,
+            },
+            {
+                "name": "NO.FZ29190",
+                "value": 401,
+            },
+            {
+                "name": "NO.YXY54246",
+                "value": 401,
+            },
+            {
+                "name": "NO.FZ74282",
+                "value": 394,
+            },
+            {
+                "name": "NO.HC17784",
+                "value": 394,
+            },
+            {
+                "name": "NO.BMZM17234",
+                "value": 392,
+            },
+            {
+                "name": "NO.YXY46722",
+                "value": 389,
+            },
+            {
+                "name": "NO.XXM79591",
+                "value": 387,
+            },
+            {
+                "name": "NO.FZ90881",
+                "value": 384,
+            },
+            {
+                "name": "NO.XXM12000",
+                "value": 376,
+            },
+            {
+                "name": "NO.XDNE44513",
+                "value": 376,
+            },
+            {
+                "name": "NO.QM49860",
+                "value": 375,
+            },
+            {
+                "name": "NO.FZ16893",
+                "value": 373,
+            },
+            {
+                "name": "NO.UCM50583",
+                "value": 372,
+            },
+            {
+                "name": "NO.FZ19798",
+                "value": 370,
+            },
+            {
+                "name": "NO.XXM8762",
+                "value": 370,
+            },
+            {
+                "name": "NO.HS52235",
+                "value": 366,
+            },
+            {
+                "name": "NO.BQY22057",
+                "value": 366,
+            },
+            {
+                "name": "NO.DSU99303",
+                "value": 366,
+            },
+            {
+                "name": "NO.BQY8448",
+                "value": 364,
+            },
+            {
+                "name": "NO.BD59470",
+                "value": 364,
+            },
+            {
+                "name": "NO.XDNE43080",
+                "value": 362,
+            },
+            {
+                "name": "NO.BQY67956",
+                "value": 361,
+            },
+            {
+                "name": "NO.ZX90270",
+                "value": 360,
+            },
+            {
+                "name": "NO.JLS62647",
+                "value": 360,
+            },
+            {
+                "name": "NO.HS50651",
+                "value": 359,
+            },
+            {
+                "name": "NO.BQY8653",
+                "value": 353,
+            },
+            {
+                "name": "NO.JFQ09277",
+                "value": 353,
+            },
+            {
+                "name": "NO.HF91470",
+                "value": 353,
+            },
+            {
+                "name": "NO.JLS32480",
+                "value": 352,
+            },
+            {
+                "name": "NO.JLS09956",
+                "value": 349,
+            },
+            {
+                "name": "NO.JLS32473",
+                "value": 349,
+            },
+            {
+                "name": "NO.BFQ68069",
+                "value": 346,
+            },
+            {
+                "name": "NO.XXM19255",
+                "value": 346,
+            },
+            {
+                "name": "NO.ALG84281",
+                "value": 344,
+            },
+            {
+                "name": "NO.XDNE98166",
+                "value": 343,
+            },
+            {
+                "name": "NO.FZ16428",
+                "value": 342,
+            },
+            {
+                "name": "NO.BYL97309",
+                "value": 336,
+            },
+            {
+                "name": "NO.XY55960",
+                "value": 335,
+            },
+            {
+                "name": "NO.MMM17957",
+                "value": 333,
+            },
+            {
+                "name": "NO.MMM17919",
+                "value": 332,
+            },
+            {
+                "name": "NO.XXM45411",
+                "value": 332,
+            },
+            {
+                "name": "NO.MMM17902",
+                "value": 332,
+            },
+            {
+                "name": "NO.NTD63866",
+                "value": 331,
+            },
+            {
+                "name": "NO.XXM30489",
+                "value": 326,
+            },
+            {
+                "name": "NO.HC4847",
+                "value": 326,
+            },
+            {
+                "name": "NO.LFQ31476",
+                "value": 324,
+            },
+            {
+                "name": "NO.FZ72844",
+                "value": 324,
+            },
+            {
+                "name": "NO.LFQ42557",
+                "value": 320,
+            },
+            {
+                "name": "NO.BFQ68083",
+                "value": 317,
+            },
+            {
+                "name": "NO.XDNE57759",
+                "value": 312,
+            },
+            {
+                "name": "NO.HC07525",
+                "value": 312,
+            },
+            {
+                "name": "NO.HM59616",
+                "value": 311,
+            },
+            {
+                "name": "NO.LFQ29855",
+                "value": 311,
+            },
+            {
+                "name": "NO.VHA00892",
+                "value": 310,
+            },
+            {
+                "name": "NO.XXM0939",
+                "value": 310,
+            },
+            {
+                "name": "NO.XDNE25666",
+                "value": 309,
+            },
+            {
+                "name": "NO.YLY47651",
+                "value": 309,
+            },
+            {
+                "name": "NO.DSY69776",
+                "value": 308,
+            },
+            {
+                "name": "NO.QF40584",
+                "value": 306,
+            },
+            {
+                "name": "NO.BQY93752",
+                "value": 305,
+            },
+            {
+                "name": "NO.XXM23153",
+                "value": 304,
+            },
+            {
+                "name": "NO.BQY67116",
+                "value": 304,
+            },
+            {
+                "name": "NO.FZ61798",
+                "value": 303,
+            },
+            {
+                "name": "NO.XXM90386",
+                "value": 302,
+            },
+            {
+                "name": "NO.LFMX66188",
+                "value": 302,
+            },
+            {
+                "name": "NO.SNN56158",
+                "value": 301,
+            },
+            {
+                "name": "NO.BDI80009",
+                "value": 301,
+            },
+            {
+                "name": "NO.FZ45879",
+                "value": 301,
+            },
+            {
+                "name": "NO.SNN55649",
+                "value": 301,
+            },
+            {
+                "name": "NO.VHA00977",
+                "value": 301,
+            },
+            {
+                "name": "NO.SNN47972",
+                "value": 300,
+            },
+            {
+                "name": "NO.BDI69790",
+                "value": 300,
+            },
+            {
+                "name": "NO.XDNE98128",
+                "value": 300,
+            },
+            {
+                "name": "NO.BZT55342",
+                "value": 297,
+            },
+            {
+                "name": "NO.LK60858",
+                "value": 296,
+            },
+            {
+                "name": "NO.FZ15063",
+                "value": 295,
+            },
+            {
+                "name": "NO.XDNE96838",
+                "value": 294,
+            },
+            {
+                "name": "NO.SNN09652",
+                "value": 294,
+            },
+            {
+                "name": "NO.DSU99280",
+                "value": 291,
+            },
+            {
+                "name": "NO.MB43008",
+                "value": 291,
+            },
+            {
+                "name": "NO.SNN56356",
+                "value": 290,
+            },
+            {
+                "name": "NO.SLK58893",
+                "value": 289,
+            },
+            {
+                "name": "NO.XXM45763",
+                "value": 288,
+            },
+            {
+                "name": "NO.LK60865",
+                "value": 288,
+            },
+            {
+                "name": "NO.YZC61262",
+                "value": 287,
+            },
+            {
+                "name": "NO.BD58619",
+                "value": 286,
+            },
+            {
+                "name": "NO.FZ90898",
+                "value": 286,
+            },
+            {
+                "name": "NO.ZX94518",
+                "value": 285,
+            },
+            {
+                "name": "NO.BYL40300",
+                "value": 281,
+            },
+            {
+                "name": "NO.LK60872",
+                "value": 280,
+            },
+            {
+                "name": "NO.BD98005",
+                "value": 279,
+            },
+            {
+                "name": "NO.XXM10627",
+                "value": 279,
+            },
+            {
+                "name": "NO.YZC6841",
+                "value": 278,
+            },
+            {
+                "name": "NO.XDNE98111",
+                "value": 275,
+            },
+            {
+                "name": "NO.HS52358",
+                "value": 275,
+            },
+            {
+                "name": "NO.HC50033",
+                "value": 275,
+            },
+            {
+                "name": "NO.SNN74251",
+                "value": 274,
+            },
+            {
+                "name": "NO.BDI68700",
+                "value": 274,
+            },
+            {
+                "name": "NO.FFS87510",
+                "value": 274,
+            },
+            {
+                "name": "NO.BQY8986",
+                "value": 273,
+            },
+            {
+                "name": "NO.XXM62672",
+                "value": 273,
+            },
+            {
+                "name": "NO.BQY3542",
+                "value": 271,
+            },
+            {
+                "name": "NO.PT16367",
+                "value": 270,
+            },
+            {
+                "name": "NO.HC4020",
+                "value": 268,
+            },
+            {
+                "name": "NO.DSU99266",
+                "value": 268,
+            },
+            {
+                "name": "NO.BZT46432",
+                "value": 267,
+            },
+            {
+                "name": "NO.JLS53690",
+                "value": 267,
+            },
+            {
+                "name": "NO.UCM40069",
+                "value": 267,
+            },
+            {
+                "name": "NO.XDNE26076",
+                "value": 265,
+            },
+            {
+                "name": "NO.XDNE87473",
+                "value": 265,
+            },
+            {
+                "name": "NO.XXM04432",
+                "value": 265,
+            },
+            {
+                "name": "NO.JLS50316",
+                "value": 265,
+            },
+            {
+                "name": "NO.FZ30168",
+                "value": 264,
+            },
+            {
+                "name": "NO.BQY0719",
+                "value": 264,
+            },
+            {
+                "name": "NO.YZC8345",
+                "value": 264,
+            },
+            {
+                "name": "NO.LFQ73179",
+                "value": 263,
+            },
+            {
+                "name": "NO.LFQ76637",
+                "value": 263,
+            },
+            {
+                "name": "NO.LFQ78051",
+                "value": 262,
+            },
+            {
+                "name": "NO.FFS86674",
+                "value": 261,
+            },
+            {
+                "name": "NO.BQY2386",
+                "value": 261,
+            },
+            {
+                "name": "NO.XDNE57933",
+                "value": 259,
+            },
+            {
+                "name": "NO.QM50156",
+                "value": 259,
+            },
+            {
+                "name": "NO.YXY66225",
+                "value": 259,
+            },
+            {
+                "name": "NO.BQY22347",
+                "value": 259,
+            },
+            {
+                "name": "NO.SD80610",
+                "value": 258,
+            },
+            {
+                "name": "NO.YZC61978",
+                "value": 258,
+            },
+            {
+                "name": "NO.FZ90904",
+                "value": 258,
+            },
+            {
+                "name": "NO.FZ36778",
+                "value": 255,
+            },
+            {
+                "name": "NO.FFS86728",
+                "value": 255,
+            },
+            {
+                "name": "NO.FZ54857",
+                "value": 255,
+            },
+            {
+                "name": "NO.XXM60524",
+                "value": 255,
+            },
+            {
+                "name": "NO.XXM2433",
+                "value": 254,
+            },
+            {
+                "name": "NO.DMS33166",
+                "value": 254,
+            },
+            {
+                "name": "NO.FZ31004",
+                "value": 253,
+            },
+            {
+                "name": "NO.XXM43004",
+                "value": 253,
+            },
+            {
+                "name": "NO.SNN55922",
+                "value": 252,
+            },
+            {
+                "name": "NO.FZ13427",
+                "value": 252,
+            },
+            {
+                "name": "NO.FFS86711",
+                "value": 252,
+            },
+            {
+                "name": "NO.JMT23693",
+                "value": 251,
+            },
+            {
+                "name": "NO.JMT46197",
+                "value": 250,
+            },
+            {
+                "name": "NO.BQY92984",
+                "value": 250,
+            },
+            {
+                "name": "NO.BZT65143",
+                "value": 249,
+            },
+            {
+                "name": "NO.XXM18555",
+                "value": 248,
+            },
+            {
+                "name": "NO.XDNE59883",
+                "value": 247,
+            },
+            {
+                "name": "NO.HS97569",
+                "value": 246,
+            },
+            {
+                "name": "NO.XDNE96869",
+                "value": 245,
+            },
+            {
+                "name": "NO.HC61909",
+                "value": 245,
+            },
+            {
+                "name": "NO.HM59272",
+                "value": 245,
+            },
+            {
+                "name": "NO.HC40119",
+                "value": 243,
+            },
+            {
+                "name": "NO.BZT31995",
+                "value": 242,
+            },
+            {
+                "name": "NO.FFS86704",
+                "value": 241,
+            },
+            {
+                "name": "NO.XDNE43073",
+                "value": 241,
+            },
+            {
+                "name": "NO.JLS32497",
+                "value": 241,
+            },
+            {
+                "name": "NO.JLS25133",
+                "value": 240,
+            },
+            {
+                "name": "NO.FFS86698",
+                "value": 240,
+            },
+            {
+                "name": "NO.QF49822",
+                "value": 240,
+            },
+            {
+                "name": "NO.QM32725",
+                "value": 239,
+            },
+            {
+                "name": "NO.XDNE57841",
+                "value": 239,
+            },
+            {
+                "name": "NO.SLK58916",
+                "value": 239,
+            },
+            {
+                "name": "NO.BYL40317",
+                "value": 238,
+            },
+            {
+                "name": "NO.SLK58855",
+                "value": 238,
+            },
+            {
+                "name": "NO.BQY4151",
+                "value": 237,
+            },
+            {
+                "name": "NO.NTD64009",
+                "value": 236,
+            },
+            {
+                "name": "NO.BQY66720",
+                "value": 236,
+            },
+            {
+                "name": "NO.PT12031",
+                "value": 236,
+            },
+            {
+                "name": "NO.JLS18156",
+                "value": 235,
+            },
+            {
+                "name": "NO.BYL40294",
+                "value": 235,
+            },
+            {
+                "name": "NO.XXM46258",
+                "value": 235,
+            },
+            {
+                "name": "NO.SLK58879",
+                "value": 234,
+            },
+            {
+                "name": "NO.HC7496",
+                "value": 231,
+            },
+            {
+                "name": "NO.CX73957",
+                "value": 231,
+            },
+            {
+                "name": "NO.BQY80535",
+                "value": 231,
+            },
+            {
+                "name": "NO.FZ13861",
+                "value": 231,
+            },
+            {
+                "name": "NO.ZX65266",
+                "value": 230,
+            },
+            {
+                "name": "NO.FZ72066",
+                "value": 230,
+            },
+            {
+                "name": "NO.BQY6584",
+                "value": 229,
+            },
+            {
+                "name": "NO.BQY56646",
+                "value": 229,
+            },
+            {
+                "name": "NO.FZ30502",
+                "value": 229,
+            },
+            {
+                "name": "NO.YZC61255",
+                "value": 229,
+            },
+            {
+                "name": "NO.HF80092",
+                "value": 228,
+            },
+            {
+                "name": "NO.SNN22316",
+                "value": 228,
+            },
+            {
+                "name": "NO.MB42902",
+                "value": 228,
+            },
+            {
+                "name": "NO.BDI68878",
+                "value": 226,
+            },
+            {
+                "name": "NO.SNN23976",
+                "value": 226,
+            },
+            {
+                "name": "NO.SLK86209",
+                "value": 225,
+            },
+            {
+                "name": "NO.BZT22910",
+                "value": 225,
+            },
+            {
+                "name": "NO.LFQ29138",
+                "value": 225,
+            },
+            {
+                "name": "NO.BD57322",
+                "value": 225,
+            },
+            {
+                "name": "NO.ZX56707",
+                "value": 225,
+            },
+            {
+                "name": "NO.HC4013",
+                "value": 223,
+            },
+            {
+                "name": "NO.FZ67994",
+                "value": 223,
+            },
+            {
+                "name": "NO.XXM80238",
+                "value": 222,
+            },
+            {
+                "name": "NO.QM15615",
+                "value": 222,
+            },
+            {
+                "name": "NO.YZC7084-1",
+                "value": 221,
+            },
+            {
+                "name": "NO.FFS59067",
+                "value": 221,
+            },
+            {
+                "name": "NO.SNN56783",
+                "value": 221,
+            },
+            {
+                "name": "NO.YZC34132",
+                "value": 220,
+            },
+            {
+                "name": "NO.VHA48290",
+                "value": 220,
+            },
+            {
+                "name": "NO.HC33395",
+                "value": 220,
+            },
+            {
+                "name": "NO.VHA48658",
+                "value": 220,
+            },
+            {
+                "name": "NO.SD93870",
+                "value": 220,
+            },
+            {
+                "name": "NO.BZT71748",
+                "value": 219,
+            },
+            {
+                "name": "NO.SD93856",
+                "value": 218,
+            },
+            {
+                "name": "NO.BQY78884",
+                "value": 218,
+            },
+            {
+                "name": "NO.SNN22286",
+                "value": 218,
+            },
+            {
+                "name": "NO.BQY81686",
+                "value": 217,
+            },
+            {
+                "name": "NO.SSMD52389",
+                "value": 217,
+            },
+            {
+                "name": "NO.DMS19122",
+                "value": 214,
+            },
+            {
+                "name": "NO.DSY68441",
+                "value": 213,
+            },
+            {
+                "name": "NO.FFS44902",
+                "value": 213,
+            },
+            {
+                "name": "NO.DSY68021",
+                "value": 212,
+            },
+            {
+                "name": "NO.BQY0916",
+                "value": 211,
+            },
+            {
+                "name": "NO.HC63774",
+                "value": 211,
+            },
+            {
+                "name": "NO.HC25157",
+                "value": 211,
+            },
+            {
+                "name": "NO.MAZO58541",
+                "value": 211,
+            },
+            {
+                "name": "NO.BD98050",
+                "value": 211,
+            },
+            {
+                "name": "NO.HC4006",
+                "value": 211,
+            },
+            {
+                "name": "NO.BQY90089",
+                "value": 210,
+            },
+            {
+                "name": "NO.PT12116",
+                "value": 210,
+            },
+            {
+                "name": "NO.QFB49273",
+                "value": 210,
+            },
+            {
+                "name": "NO.ZX73551",
+                "value": 210,
+            },
+            {
+                "name": "NO.QFB33531",
+                "value": 210,
+            },
+            {
+                "name": "NO.JLS97187",
+                "value": 209,
+            },
+            {
+                "name": "NO.QDQ27714",
+                "value": 209,
+            },
+            {
+                "name": "NO.XXM22170",
+                "value": 208,
+            },
+            {
+                "name": "NO.SNN55663",
+                "value": 208,
+            },
+            {
+                "name": "NO.HC8265",
+                "value": 207,
+            },
+            {
+                "name": "NO.DMS25102",
+                "value": 206,
+            },
+            {
+                "name": "NO.FZ67888",
+                "value": 205,
+            },
+            {
+                "name": "NO.XXM93394",
+                "value": 204,
+            },
+            {
+                "name": "NO.XDNE96845",
+                "value": 203,
+            },
+            {
+                "name": "NO.HC34477",
+                "value": 201,
+            },
+            {
+                "name": "NO.ZD83093",
+                "value": 201,
+            },
+            {
+                "name": "NO.ZOZU09898",
+                "value": 200,
+            },
+            {
+                "name": "NO.JLS27653",
+                "value": 200,
+            },
+            {
+                "name": "NO.BZT79416",
+                "value": 200,
+            },
+            {
+                "name": "NO.HF08761",
+                "value": 200,
+            },
+            {
+                "name": "NO.JMT42175",
+                "value": 200,
+            },
+            {
+                "name": "NO.JMT45121",
+                "value": 200,
+            },
+            {
+                "name": "NO.HC64287",
+                "value": 200,
+            },
+            {
+                "name": "NO.HF08747",
+                "value": 200,
+            },
+            {
+                "name": "NO.BD96555",
+                "value": 200,
+            },
+            {
+                "name": "NO.FZ30516",
+                "value": 199,
+            },
+            {
+                "name": "NO.FZ13267",
+                "value": 198,
+            },
+            {
+                "name": "NO.XXM29688",
+                "value": 198,
+            },
+            {
+                "name": "NO.XXM10597",
+                "value": 198,
+            },
+            {
+                "name": "NO.BQY8370",
+                "value": 196,
+            },
+            {
+                "name": "NO.BQY0610",
+                "value": 196,
+            },
+            {
+                "name": "NO.SNN22323",
+                "value": 196,
+            },
+            {
+                "name": "NO.YXY46210",
+                "value": 196,
+            },
+            {
+                "name": "NO.HC6307",
+                "value": 195,
+            },
+            {
+                "name": "NO.FFS96074",
+                "value": 195,
+            },
+            {
+                "name": "NO.BD57308",
+                "value": 194,
+            },
+            {
+                "name": "NO.JLS61855",
+                "value": 194,
+            },
+            {
+                "name": "NO.QDQ49068",
+                "value": 194,
+            },
+            {
+                "name": "NO.XDNE43097",
+                "value": 192,
+            },
+            {
+                "name": "NO.XXM13335",
+                "value": 192,
+            },
+            {
+                "name": "NO.ALG84274",
+                "value": 192,
+            },
+            {
+                "name": "NO.YZC63491",
+                "value": 192,
+            },
+            {
+                "name": "NO.HC9569",
+                "value": 191,
+            },
+            {
+                "name": "NO.LFMX54437",
+                "value": 190,
+            },
+            {
+                "name": "NO.BZT90849",
+                "value": 190,
+            },
+            {
+                "name": "NO.BD98029",
+                "value": 189,
+            },
+            {
+                "name": "NO.ZD83116",
+                "value": 188,
+            },
+            {
+                "name": "NO.BQY45015",
+                "value": 188,
+            },
+            {
+                "name": "NO.YXY75135",
+                "value": 186,
+            },
+            {
+                "name": "NO.SD80597",
+                "value": 186,
+            },
+            {
+                "name": "NO.HC49228",
+                "value": 185,
+            },
+            {
+                "name": "NO.YLY31650",
+                "value": 185,
+            },
+            {
+                "name": "NO.BQY7953",
+                "value": 184,
+            },
+            {
+                "name": "NO.JFQ33968",
+                "value": 184,
+            },
+            {
+                "name": "NO.AWY90832",
+                "value": 184,
+            },
+            {
+                "name": "NO.BD86346",
+                "value": 184,
+            },
+            {
+                "name": "NO.SNN70642",
+                "value": 184,
+            },
+            {
+                "name": "NO.MZY62760",
+                "value": 184,
+            },
+            {
+                "name": "NO.BQY3529",
+                "value": 183,
+            },
+            {
+                "name": "NO.HS52396",
+                "value": 180,
+            },
+            {
+                "name": "NO.VHA00717",
+                "value": 180,
+            },
+            {
+                "name": "NO.SNN22354",
+                "value": 180,
+            },
+            {
+                "name": "NO.ZX31391",
+                "value": 179,
+            },
+            {
+                "name": "NO.FZ36761",
+                "value": 178,
+            },
+            {
+                "name": "NO.CX73926",
+                "value": 178,
+            },
+            {
+                "name": "NO.BSY58657",
+                "value": 177,
+            },
+            {
+                "name": "NO.YZC2503",
+                "value": 177,
+            },
+            {
+                "name": "NO.XXM62146",
+                "value": 177,
+            },
+            {
+                "name": "NO.XXM73971",
+                "value": 177,
+            },
+            {
+                "name": "NO.XXM23969",
+                "value": 177,
+            },
+            {
+                "name": "NO.XXM10658",
+                "value": 177,
+            },
+            {
+                "name": "NO.HS62029",
+                "value": 176,
+            },
+            {
+                "name": "NO.HC63514",
+                "value": 176,
+            },
+            {
+                "name": "NO.HM58237",
+                "value": 176,
+            },
+            {
+                "name": "NO.MAZO35887",
+                "value": 176,
+            },
+            {
+                "name": "NO.HC5944",
+                "value": 176,
+            },
+            {
+                "name": "NO.XXM8622",
+                "value": 175,
+            },
+            {
+                "name": "NO.FZ90751",
+                "value": 174,
+            },
+            {
+                "name": "NO.SNN04777",
+                "value": 173,
+            },
+            {
+                "name": "NO.DSU99242",
+                "value": 173,
+            },
+            {
+                "name": "NO.XDNE26366",
+                "value": 172,
+            },
+            {
+                "name": "NO.XDNE43493",
+                "value": 172,
+            },
+            {
+                "name": "NO.XDNE26373",
+                "value": 172,
+            },
+            {
+                "name": "NO.XDNE43837",
+                "value": 172,
+            },
+            {
+                "name": "NO.XDNE43509",
+                "value": 172,
+            },
+            {
+                "name": "NO.FZ22606",
+                "value": 172,
+            },
+            {
+                "name": "NO.BQY2121A",
+                "value": 171,
+            },
+            {
+                "name": "NO.SNN74244",
+                "value": 171,
+            },
+            {
+                "name": "NO.BQY02001",
+                "value": 171,
+            },
+            {
+                "name": "NO.XDNE58206",
+                "value": 170,
+            },
+            {
+                "name": "NO.YLY74879",
+                "value": 170,
+            },
+            {
+                "name": "NO.JMT24126",
+                "value": 170,
+            },
+            {
+                "name": "NO.HM86902",
+                "value": 169,
+            },
+            {
+                "name": "NO.BQY90744",
+                "value": 169,
+            },
+            {
+                "name": "NO.BD59838",
+                "value": 168,
+            },
+            {
+                "name": "NO.BYL97293",
+                "value": 168,
+            },
+            {
+                "name": "NO.XXM9704",
+                "value": 167,
+            },
+            {
+                "name": "NO.XXM10634",
+                "value": 167,
+            },
+            {
+                "name": "NO.HC25447",
+                "value": 167,
+            },
+            {
+                "name": "NO.BD17435",
+                "value": 167,
+            },
+            {
+                "name": "NO.BS74923",
+                "value": 167,
+            },
+            {
+                "name": "NO.BQY90737",
+                "value": 166,
+            },
+            {
+                "name": "NO.SNN22293",
+                "value": 166,
+            },
+            {
+                "name": "NO.BZT44463",
+                "value": 165,
+            },
+            {
+                "name": "NO.HM44018",
+                "value": 165,
+            },
+            {
+                "name": "NO.BZT94785",
+                "value": 163,
+            },
+            {
+                "name": "NO.JLS62920",
+                "value": 163,
+            },
+            {
+                "name": "NO.BQY7243",
+                "value": 163,
+            },
+            {
+                "name": "NO.SNN04296",
+                "value": 162,
+            },
+            {
+                "name": "NO.BMZM17227",
+                "value": 161,
+            },
+            {
+                "name": "NO.FZ66621",
+                "value": 161,
+            },
+            {
+                "name": "NO.XXM2385",
+                "value": 161,
+            },
+            {
+                "name": "NO.XXM55625",
+                "value": 161,
+            },
+            {
+                "name": "NO.DO53461",
+                "value": 161,
+            },
+            {
+                "name": "NO.BQY9143",
+                "value": 160,
+            },
+            {
+                "name": "NO.PT58046",
+                "value": 160,
+            },
+            {
+                "name": "NO.HS09932",
+                "value": 160,
+            },
+            {
+                "name": "NO.XDNE26182",
+                "value": 159,
+            },
+            {
+                "name": "NO.XXM56974",
+                "value": 159,
+            },
+            {
+                "name": "NO.HM25413",
+                "value": 159,
+            },
+            {
+                "name": "NO.LFQ76453",
+                "value": 158,
+            },
+            {
+                "name": "NO.CX73940",
+                "value": 158,
+            },
+            {
+                "name": "NO.JLS21111",
+                "value": 158,
+            },
+            {
+                "name": "NO.JMT23686",
+                "value": 157,
+            },
+            {
+                "name": "NO.BQY90720",
+                "value": 157,
+            },
+            {
+                "name": "NO.JMT45350",
+                "value": 157,
+            },
+            {
+                "name": "NO.BD86896",
+                "value": 157,
+            },
+            {
+                "name": "NO.BZT45978",
+                "value": 157,
+            },
+            {
+                "name": "NO.XY46470",
+                "value": 156,
+            },
+            {
+                "name": "NO.BZT31797",
+                "value": 156,
+            },
+            {
+                "name": "NO.FYK30595",
+                "value": 156,
+            },
+            {
+                "name": "NO.XDNE16756",
+                "value": 155,
+            },
+            {
+                "name": "NO.SD83970",
+                "value": 155,
+            },
+            {
+                "name": "NO.PT57360",
+                "value": 155,
+            },
+            {
+                "name": "NO.XXM63501",
+                "value": 155,
+            },
+            {
+                "name": "NO.FZ56219",
+                "value": 155,
+            },
+            {
+                "name": "NO.FZ74206",
+                "value": 155,
+            },
+            {
+                "name": "NO.SNN22361",
+                "value": 155,
+            },
+            {
+                "name": "NO.JMT30004",
+                "value": 155,
+            },
+            {
+                "name": "NO.YZC63590",
+                "value": 155,
+            },
+            {
+                "name": "NO.BQY7151",
+                "value": 155,
+            },
+            {
+                "name": "NO.BQY2751",
+                "value": 155,
+            },
+            {
+                "name": "NO.HM68179",
+                "value": 154,
+            },
+            {
+                "name": "NO.QM32718",
+                "value": 153,
+            },
+            {
+                "name": "NO.BZT55274",
+                "value": 152,
+            },
+            {
+                "name": "NO.LFQ29145",
+                "value": 152,
+            },
+            {
+                "name": "NO.XXM37379",
+                "value": 152,
+            },
+            {
+                "name": "NO.XXM6529-1",
+                "value": 152,
+            },
+            {
+                "name": "NO.FFS96067",
+                "value": 151,
+            },
+            {
+                "name": "NO.BD17428",
+                "value": 151,
+            },
+            {
+                "name": "NO.FZ23214",
+                "value": 151,
+            },
+            {
+                "name": "NO.BDI08686",
+                "value": 150,
+            },
+            {
+                "name": "NO.HC6591",
+                "value": 149,
+            },
+            {
+                "name": "NO.BZT67246",
+                "value": 149,
+            },
+            {
+                "name": "NO.FZ22504",
+                "value": 148,
+            },
+            {
+                "name": "NO.HM17275",
+                "value": 148,
+            },
+            {
+                "name": "NO.JMT54277",
+                "value": 148,
+            },
+            {
+                "name": "NO.XXM13328",
+                "value": 147,
+            },
+            {
+                "name": "NO.HS49020",
+                "value": 147,
+            },
+            {
+                "name": "NO.SNN22309",
+                "value": 147,
+            },
+            {
+                "name": "NO.JMT46029",
+                "value": 147,
+            },
+            {
+                "name": "NO.HC8562",
+                "value": 146,
+            },
+            {
+                "name": "NO.BYL97316",
+                "value": 146,
+            },
+            {
+                "name": "NO.CX16220",
+                "value": 146,
+            },
+            {
+                "name": "NO.BQY45824",
+                "value": 146,
+            },
+            {
+                "name": "NO.FZ68007",
+                "value": 146,
+            },
+            {
+                "name": "NO.YXY55281",
+                "value": 145,
+            },
+            {
+                "name": "NO.FZ73278",
+                "value": 145,
+            },
+            {
+                "name": "NO.UCM25492",
+                "value": 145,
+            },
+            {
+                "name": "NO.BQY8487",
+                "value": 145,
+            },
+            {
+                "name": "NO.HC85356",
+                "value": 145,
+            },
+            {
+                "name": "NO.LFMX23474",
+                "value": 144,
+            },
+            {
+                "name": "NO.XDNE57735",
+                "value": 144,
+            },
+            {
+                "name": "NO.XXM62986",
+                "value": 144,
+            },
+            {
+                "name": "NO.SNN24853",
+                "value": 144,
+            },
+            {
+                "name": "NO.XDNE58510",
+                "value": 143,
+            },
+            {
+                "name": "NO.BQY22095",
+                "value": 142,
+            },
+            {
+                "name": "NO.LFQ80498",
+                "value": 141,
+            },
+            {
+                "name": "NO.XXM4914",
+                "value": 141,
+            },
+            {
+                "name": "NO.SNN24884",
+                "value": 141,
+            },
+            {
+                "name": "NO.FZ22682",
+                "value": 141,
+            },
+            {
+                "name": "NO.JMT47521",
+                "value": 141,
+            },
+            {
+                "name": "NO.JMT54413",
+                "value": 140,
+            },
+            {
+                "name": "NO.MB34654",
+                "value": 139,
+            },
+            {
+                "name": "NO.SNN21880",
+                "value": 139,
+            },
+            {
+                "name": "NO.BMZM20401",
+                "value": 138,
+            },
+            {
+                "name": "NO.YLY71236",
+                "value": 138,
+            },
+            {
+                "name": "NO.XXM24921",
+                "value": 137,
+            },
+            {
+                "name": "NO.XXM63518",
+                "value": 137,
+            },
+            {
+                "name": "NO.XXM2781",
+                "value": 137,
+            },
+            {
+                "name": "NO.BZT66812",
+                "value": 137,
+            },
+            {
+                "name": "NO.ZOZU18456",
+                "value": 137,
+            },
+            {
+                "name": "NO.SNN24846",
+                "value": 136,
+            },
+            {
+                "name": "NO.XXM42007",
+                "value": 136,
+            },
+            {
+                "name": "NO.SD80627",
+                "value": 136,
+            },
+            {
+                "name": "NO.LFQ81891",
+                "value": 136,
+            },
+            {
+                "name": "NO.ZD69714",
+                "value": 135,
+            },
+            {
+                "name": "NO.BQY79676",
+                "value": 135,
+            },
+            {
+                "name": "NO.XXM63013",
+                "value": 134,
+            },
+            {
+                "name": "NO.HC50361",
+                "value": 134,
+            },
+            {
+                "name": "NO.BQY25010",
+                "value": 134,
+            },
+            {
+                "name": "NO.PT87381",
+                "value": 134,
+            },
+            {
+                "name": "NO.SNN30189",
+                "value": 134,
+            },
+            {
+                "name": "NO.FZ70239",
+                "value": 133,
+            },
+            {
+                "name": "NO.JMT46319",
+                "value": 133,
+            },
+            {
+                "name": "NO.SNN24839",
+                "value": 133,
+            },
+            {
+                "name": "NO.SNN24860",
+                "value": 133,
+            },
+            {
+                "name": "NO.YZC34149",
+                "value": 133,
+            },
+            {
+                "name": "NO.XXM46043",
+                "value": 133,
+            },
+            {
+                "name": "NO.YZC25348",
+                "value": 133,
+            },
+            {
+                "name": "NO.XXM0909",
+                "value": 133,
+            },
+            {
+                "name": "NO.HC63477",
+                "value": 132,
+            },
+            {
+                "name": "NO.SLK96494",
+                "value": 132,
+            },
+            {
+                "name": "NO.XDNE26915",
+                "value": 132,
+            },
+            {
+                "name": "NO.ZD69660",
+                "value": 132,
+            },
+            {
+                "name": "NO.XXM37584",
+                "value": 131,
+            },
+            {
+                "name": "NO.BQY70475",
+                "value": 130,
+            },
+            {
+                "name": "NO.XXM62054",
+                "value": 130,
+            },
+            {
+                "name": "NO.BQY7038",
+                "value": 130,
+            },
+            {
+                "name": "NO.LFMX70901",
+                "value": 129,
+            },
+            {
+                "name": "NO.BZT54819",
+                "value": 129,
+            },
+            {
+                "name": "NO.MZY84656",
+                "value": 129,
+            },
+            {
+                "name": "NO.BQY68308",
+                "value": 129,
+            },
+            {
+                "name": "NO.ZD69677",
+                "value": 129,
+            },
+            {
+                "name": "NO.DSY69837",
+                "value": 129,
+            },
+            {
+                "name": "NO.SD80559",
+                "value": 128,
+            },
+            {
+                "name": "NO.HM17381",
+                "value": 128,
+            },
+            {
+                "name": "NO.SNN21897",
+                "value": 127,
+            },
+            {
+                "name": "NO.BQY7633",
+                "value": 127,
+            },
+            {
+                "name": "NO.BQY81655",
+                "value": 127,
+            },
+            {
+                "name": "NO.CX22887",
+                "value": 127,
+            },
+            {
+                "name": "NO.SNN04609",
+                "value": 127,
+            },
+            {
+                "name": "NO.SD80580",
+                "value": 126,
+            },
+            {
+                "name": "NO.HS62272",
+                "value": 126,
+            },
+            {
+                "name": "NO.ZD69738",
+                "value": 126,
+            },
+            {
+                "name": "NO.BQY7595",
+                "value": 125,
+            },
+            {
+                "name": "NO.YZC1134",
+                "value": 125,
+            },
+            {
+                "name": "NO.FZ13274",
+                "value": 124,
+            },
+            {
+                "name": "NO.BQY9476",
+                "value": 124,
+            },
+            {
+                "name": "NO.XXM2835",
+                "value": 124,
+            },
+            {
+                "name": "NO.JLS38512",
+                "value": 124,
+            },
+            {
+                "name": "NO.BQY96970",
+                "value": 124,
+            },
+            {
+                "name": "NO.ZD69684",
+                "value": 124,
+            },
+            {
+                "name": "NO.BD43523",
+                "value": 124,
+            },
+            {
+                "name": "NO.BQY25027",
+                "value": 123,
+            },
+            {
+                "name": "NO.ZD69721",
+                "value": 123,
+            },
+            {
+                "name": "NO.XXM23549",
+                "value": 123,
+            },
+            {
+                "name": "NO.YZC6912",
+                "value": 123,
+            },
+            {
+                "name": "NO.YZC40393",
+                "value": 122,
+            },
+            {
+                "name": "NO.JLS61503",
+                "value": 122,
+            },
+            {
+                "name": "NO.FZ67864",
+                "value": 122,
+            },
+            {
+                "name": "NO.HM17305",
+                "value": 121,
+            },
+            {
+                "name": "NO.YZC6833",
+                "value": 121,
+            },
+            {
+                "name": "NO.FZ15599",
+                "value": 121,
+            },
+            {
+                "name": "NO.DMS33142",
+                "value": 121,
+            },
+            {
+                "name": "NO.ZYF33548",
+                "value": 121,
+            },
+            {
+                "name": "NO.XDNE86087",
+                "value": 120,
+            },
+            {
+                "name": "NO.XDNE86094",
+                "value": 120,
+            },
+            {
+                "name": "NO.HM16497",
+                "value": 120,
+            },
+            {
+                "name": "NO.BQY81235",
+                "value": 120,
+            },
+            {
+                "name": "NO.PT16100",
+                "value": 120,
+            },
+            {
+                "name": "NO.QY35757",
+                "value": 120,
+            },
+            {
+                "name": "NO.DSU99327",
+                "value": 119,
+            },
+            {
+                "name": "NO.FZ29664",
+                "value": 119,
+            },
+            {
+                "name": "NO.XXM93066",
+                "value": 119,
+            },
+            {
+                "name": "NO.SD81600",
+                "value": 118,
+            },
+            {
+                "name": "NO.SNN24877",
+                "value": 118,
+            },
+            {
+                "name": "NO.BQY81662",
+                "value": 117,
+            },
+            {
+                "name": "NO.BQY81211",
+                "value": 117,
+            },
+            {
+                "name": "NO.FZ47507",
+                "value": 116,
+            },
+            {
+                "name": "NO.YZC76477",
+                "value": 116,
+            },
+            {
+                "name": "NO.BD03558",
+                "value": 116,
+            },
+            {
+                "name": "NO.XXM23525",
+                "value": 116,
+            },
+            {
+                "name": "NO.XXM6451",
+                "value": 115,
+            },
+            {
+                "name": "NO.HC85462",
+                "value": 115,
+            },
+            {
+                "name": "NO.HM17299",
+                "value": 115,
+            },
+            {
+                "name": "NO.HC99170",
+                "value": 115,
+            },
+            {
+                "name": "NO.LN74268",
+                "value": 114,
+            },
+            {
+                "name": "NO.XXM2378",
+                "value": 114,
+            },
+            {
+                "name": "NO.SNN55632",
+                "value": 114,
+            },
+            {
+                "name": "NO.BQY4045",
+                "value": 114,
+            },
+            {
+                "name": "NO.HC9323",
+                "value": 114,
+            },
+            {
+                "name": "NO.HM16759",
+                "value": 114,
+            },
+            {
+                "name": "NO.ZD83086",
+                "value": 113,
+            },
+            {
+                "name": "NO.DMS19139",
+                "value": 113,
+            },
+            {
+                "name": "NO.SNN04630",
+                "value": 113,
+            },
+            {
+                "name": "NO.FZ56585",
+                "value": 113,
+            },
+            {
+                "name": "NO.XXM10610",
+                "value": 113,
+            },
+            {
+                "name": "NO.BZT83642",
+                "value": 112,
+            },
+            {
+                "name": "NO.FZ74329",
+                "value": 112,
+            },
+            {
+                "name": "NO.HC62753",
+                "value": 112,
+            },
+            {
+                "name": "NO.SD81822",
+                "value": 112,
+            },
+            {
+                "name": "NO.BD17442",
+                "value": 112,
+            },
+            {
+                "name": "NO.HM17282",
+                "value": 111,
+            },
+            {
+                "name": "NO.HC4830",
+                "value": 111,
+            },
+            {
+                "name": "NO.ZOZU42892",
+                "value": 111,
+            },
+            {
+                "name": "NO.FK57278",
+                "value": 111,
+            },
+            {
+                "name": "NO.YZC1172",
+                "value": 110,
+            },
+            {
+                "name": "NO.BQY90546",
+                "value": 110,
+            },
+            {
+                "name": "NO.FZ92212",
+                "value": 110,
+            },
+            {
+                "name": "NO.FZ82317",
+                "value": 110,
+            },
+            {
+                "name": "NO.QY58749",
+                "value": 110,
+            },
+            {
+                "name": "NO.FZ92199",
+                "value": 110,
+            },
+            {
+                "name": "NO.XXM46234",
+                "value": 110,
+            },
+            {
+                "name": "NO.JLS60223",
+                "value": 110,
+            },
+            {
+                "name": "NO.XDNE98098",
+                "value": 110,
+            },
+            {
+                "name": "NO.LFMX41055",
+                "value": 109,
+            },
+            {
+                "name": "NO.BD17367",
+                "value": 109,
+            },
+            {
+                "name": "NO.XXM23952",
+                "value": 109,
+            },
+            {
+                "name": "NO.HC63729",
+                "value": 109,
+            },
+            {
+                "name": "NO.YZC40898",
+                "value": 108,
+            },
+            {
+                "name": "NO.FZ70659",
+                "value": 108,
+            },
+            {
+                "name": "NO.YZC1158",
+                "value": 108,
+            },
+            {
+                "name": "NO.SNN22330",
+                "value": 108,
+            },
+            {
+                "name": "NO.SD81648",
+                "value": 108,
+            },
+            {
+                "name": "NO.YLY80801",
+                "value": 107,
+            },
+            {
+                "name": "NO.XXM45787",
+                "value": 107,
+            },
+            {
+                "name": "NO.FK57261",
+                "value": 107,
+            },
+            {
+                "name": "NO.YZC61163",
+                "value": 106,
+            },
+            {
+                "name": "NO.XXM36792",
+                "value": 106,
+            },
+            {
+                "name": "NO.XXM11294",
+                "value": 105,
+            },
+            {
+                "name": "NO.YZC64225",
+                "value": 105,
+            },
+            {
+                "name": "NO.DMS14724",
+                "value": 105,
+            },
+            {
+                "name": "NO.XXM2774",
+                "value": 105,
+            },
+            {
+                "name": "NO.BQY18477",
+                "value": 105,
+            },
+            {
+                "name": "NO.XXM37591",
+                "value": 105,
+            },
+            {
+                "name": "NO.SNN04616",
+                "value": 105,
+            },
+            {
+                "name": "NO.MAZO24874",
+                "value": 105,
+            },
+            {
+                "name": "NO.JMT77955",
+                "value": 105,
+            },
+            {
+                "name": "NO.JMT15681",
+                "value": 104,
+            },
+            {
+                "name": "NO.BD17374",
+                "value": 104,
+            },
+            {
+                "name": "NO.BQY9486",
+                "value": 104,
+            },
+            {
+                "name": "NO.ZD91772",
+                "value": 104,
+            },
+            {
+                "name": "NO.LFMX72486",
+                "value": 103,
+            },
+            {
+                "name": "NO.JMT21569",
+                "value": 102,
+            },
+            {
+                "name": "NO.BD17473",
+                "value": 102,
+            },
+            {
+                "name": "NO.PT16612",
+                "value": 102,
+            },
+            {
+                "name": "NO.YZC76507",
+                "value": 102,
+            },
+            {
+                "name": "NO.FZ29626",
+                "value": 101,
+            },
+            {
+                "name": "NO.BQY61558",
+                "value": 101,
+            },
+            {
+                "name": "NO.YZC9929",
+                "value": 101,
+            },
+            {
+                "name": "NO.XF28513",
+                "value": 101,
+            },
+            {
+                "name": "NO.JMT24201",
+                "value": 101,
+            },
+            {
+                "name": "NO.BQY2972",
+                "value": 101,
+            },
+            {
+                "name": "NO.BD17459",
+                "value": 101,
+            },
+            {
+                "name": "NO.BD98036",
+                "value": 100,
+            },
+            {
+                "name": "NO.YXY54321",
+                "value": 100,
+            },
+            {
+                "name": "NO.FZ91932",
+                "value": 100,
+            },
+            {
+                "name": "NO.PT16605",
+                "value": 100,
+            },
+            {
+                "name": "NO.FZ91949",
+                "value": 100,
+            },
+            {
+                "name": "NO.SD96123",
+                "value": 100,
+            },
+            {
+                "name": "NO.MZY51177",
+                "value": 100,
+            },
+            {
+                "name": "NO.SLK86216",
+                "value": 100,
+            },
+            {
+                "name": "NO.SD93738",
+                "value": 100,
+            },
+            {
+                "name": "NO.HF08754",
+                "value": 100,
+            },
+            {
+                "name": "NO.FZ91956",
+                "value": 100,
+            },
+            {
+                "name": "NO.XXM77450",
+                "value": 100,
+            },
+            {
+                "name": "NO.XY30694",
+                "value": 100,
+            },
+            {
+                "name": "NO.DMS19306",
+                "value": 100,
+            },
+            {
+                "name": "NO.SD94259",
+                "value": 100,
+            },
+            {
+                "name": "NO.XXM90320",
+                "value": 100,
+            },
+            {
+                "name": "NO.SD93622",
+                "value": 100,
+            },
+            {
+                "name": "NO.YLY90935",
+                "value": 100,
+            },
+            {
+                "name": "NO.JLS52891",
+                "value": 100,
+            },
+            {
+                "name": "NO.XXM1413",
+                "value": 100,
+            },
+            {
+                "name": "NO.BQY90416",
+                "value": 100,
+            },
+            {
+                "name": "NO.SD93615",
+                "value": 100,
+            },
+            {
+                "name": "NO.SD30878",
+                "value": 100,
+            },
+            {
+                "name": "NO.SD91006",
+                "value": 100,
+            },
+            {
+                "name": "NO.SD90993",
+                "value": 100,
+            }
+        ];
+        // 人像的base64编码
+        image1 =
+            'data:image/png;base64,iVBORw0KGgoAAAI=';
+        var maskResource = new Image();
+        maskResource.src = image1;
+        option = {
+            //设置标题，居中显示
+            title: {
+                text: 'SKU销售量',
+                subtext: '单位：单',
+                textStyle: {
+                    color: '#434343',
+                    fontSize: 18
+                },
+                subtextStyle: {
+                    color: '#CCCCCC',
+                    fontSize: 12
+                },
+            },
+            //数据可以点击
+            tooltip: {},
+
+            series: [
+                {
+                    //maskImage: maskResource,
+                    //词的类型
+                    type: 'wordCloud',
+                    //设置字符大小范围
+                    sizeRange: [6, 78],
+                    rotationRange: [-45, 90],
+                    textStyle: {
+
+                        //生成随机的字体颜色
+                        color: function () {
+                            return (
+                                'rgb(' +
+                                [
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160),
+                                    Math.round(Math.random() * 160),
+                                ].join(',') +
+                                ')'
+                            );
+                        },
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowColor: '#333'
+                        }
+
+                    },
+
+                    //不要忘记调用数据
+                    data: jsonlist,
+                },
+            ],
+        };
+
+        if (option && typeof option === 'object') {
+            myChart.setOption(option);
+        }
+    </script>
+</body>
+
+</html>

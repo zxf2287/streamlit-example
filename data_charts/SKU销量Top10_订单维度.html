@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Awesome-pyecharts</title>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+</head>
+
+<body bgcolor=#F5F5F5></body>
+<center>
+    <div id='9c4e6058b3da43648b9f5f4c1236cc16'
+        style="width: 1380px;height:500px;background:#FFFFFF; margin:0px; padding:6px;margin-top:6px; auto"></div>
+</center>
+<body>
+    <div id="9c4e6058b3da43648b9f5f4c1236cc16" class="chart-container" style="width:1000px; height:500px;"></div>
+    <script>
+        var chart_9c4e6058b3da43648b9f5f4c1236cc16 = echarts.init(
+            document.getElementById('9c4e6058b3da43648b9f5f4c1236cc16'), 'white', {renderer: 'canvas'});
+        var option_9c4e6058b3da43648b9f5f4c1236cc16 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    //"color": "#78C4D4", //柱状颜色
+    "series": [
+        {
+            "type": "bar",
+            "name": "订单数量",
+            "legendHoverLink": true,
+            "data": [
+                8949,
+                6903,
+                5131,
+                4717,
+                3507,
+                2919,
+                2207,
+                2143,
+                1953,
+                1948,
+                1822
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 0,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "line",
+            "name": "累计占比%",
+            "connectNulls": false,
+            "yAxisIndex": 1,
+            "symbolSize": 8,
+            "showSymbol": true,
+            "smooth": false,
+            "clip": true,
+            "step": false,
+            "data": [
+                [
+                    "NO.HC8390",
+                    4.64
+                ],
+                [
+                    "NO.NTD40410",
+                    8.22
+                ],
+                [
+                    "NO.LK19986",
+                    10.88
+                ],
+                [
+                    "NO.HF08518",
+                    13.33
+                ],
+                [
+                    "NO.LK19979",
+                    15.15
+                ],
+                [
+                    "NO.DSY69844",
+                    16.66
+                ],
+                [
+                    "NO.LK27721",
+                    17.8
+                ],
+                [
+                    "NO.MB43169",
+                    18.91
+                ],
+                [
+                    "NO.BQY1886-2",
+                    19.93
+                ],
+                [
+                    "NO.HF08525",
+                    20.94
+                ],
+                [
+                    "NO.LK27745",
+                    21.88
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 2,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                //"color": "#28527a"
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "itemStyle": {
+                //"color": "#28527a",
+                //"borderColor": "#28527a",
+                "borderWidth": 2
+            },
+            "zlevel": 0,
+            "z": 0,
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "订单数量",
+                "累计占比%"
+            ],
+            "selected": {
+                "订单数量": true,
+                "累计占比%": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "axis",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "cross"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "type": "category",
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": 0,
+                "margin": 8
+            },
+            "axisPointer": {
+                "show": true,
+                "type": "shadow"
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "NO.HC8390",
+                "NO.NTD40410",
+                "NO.LK19986",
+                "NO.HF08518",
+                "NO.LK19979",
+                "NO.DSY69844",
+                "NO.LK27721",
+                "NO.MB43169",
+                "NO.BQY1886-2",
+                "NO.HF08525",
+                "NO.LK27745"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        },
+        {
+            "type": "value",
+            "name": "累计占比%",
+            "show": false,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "interval": 50,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{value}%"
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "min": 0,
+            "max": 21.88,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+                {
+                    "text": "SKU销量Top10-订单维度",
+                    "subtext": "单位：单",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "textStyle": {
+                        "color": "#434343",
+                        "fontSize": 18
+                    },
+                    subtextStyle: {
+                        color: '#CCCCCC',
+                        fontSize: 12
+                    },
+                }
+            ],
+    "toolbox": {
+        "show": false,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "保存为图片",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "还原"
+            },
+            "dataView": {
+                "show": true,
+                "title": "数据视图",
+                "readOnly": false,
+                "lang": [
+                    "数据视图",
+                    "关闭",
+                    "刷新"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "区域缩放",
+                    "back": "区域缩放还原"
+                },
+                "icon": {},
+                "xAxisIndex": false,
+                "yAxisIndex": false,
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "切换为折线图",
+                    "bar": "切换为柱状图",
+                    "stack": "切换为堆叠",
+                    "tiled": "切换为平铺"
+                },
+                "icon": {}
+            },
+            "brush": {
+                "icon": {},
+                "title": {
+                    "rect": "矩形选择",
+                    "polygon": "圈选",
+                    "lineX": "横向选择",
+                    "lineY": "纵向选择",
+                    "keep": "保持选择",
+                    "clear": "清除选择"
+                }
+            }
+        }
+    }
+};
+        chart_9c4e6058b3da43648b9f5f4c1236cc16.setOption(option_9c4e6058b3da43648b9f5f4c1236cc16);
+    </script>
+</body>
+</html>

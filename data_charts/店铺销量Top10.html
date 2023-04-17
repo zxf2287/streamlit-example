@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Awesome-pyecharts</title>
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+</head>
+
+<body bgcolor=#F5F5F5></body>
+<center>
+    <div id='b24d8a00845045ec96f69d442d9a848f'
+        style="width: 1380px;height:500px;background:#FFFFFF; margin:0px; padding:6px;margin-top:6px; auto"></div>
+</center>vv
+<body>
+    <div id="b24d8a00845045ec96f69d442d9a848f" class="chart-container" style="width:1000px; height:500px;"></div>
+    <script>
+        var chart_b24d8a00845045ec96f69d442d9a848f = echarts.init(
+            document.getElementById('b24d8a00845045ec96f69d442d9a848f'), 'white', {renderer: 'canvas'});
+        var option_b24d8a00845045ec96f69d442d9a848f = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#5470C6",
+        "#5D7AD1",
+        "#6884D8",
+        "#768FDF",
+        "#869EE5",
+        "#95AAEA",
+        "#A5B7EF",
+        "#B3C3F5",
+        "#C3D1FA",
+        "#DDE4FC"
+
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "legendHoverLink": true,
+            "data": [
+                16988,
+                10065,
+                9168,
+                8834,
+                8609,
+                6736,
+                5101,
+                4660,
+                3706,
+                3593
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "right",
+                "margin": 8
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "pie",
+            "name": "店铺订单量占比",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "DS0901009",
+                    "value": 16988
+                },
+                {
+                    "name": "DS0904148",
+                    "value": 10065
+                },
+                {
+                    "name": "DS0920014",
+                    "value": 9168
+                },
+                {
+                    "name": "AL0420082",
+                    "value": 8834
+                },
+                {
+                    "name": "DS0940017",
+                    "value": 8609
+                },
+                {
+                    "name": "AL0429016",
+                    "value": 6736
+                },
+                {
+                    "name": "SC1501003",
+                    "value": 5101
+                },
+                {
+                    "name": "DS0940023",
+                    "value": 4660
+                },
+                {
+                    "name": "QT2201004",
+                    "value": 3706
+                },
+                {
+                    "name": "AL0421027",
+                    "value": 3593
+                }
+            ],
+            "radius": [
+                "20%",
+                "40%"
+            ],
+            "center": [
+                "75%",
+                "36%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8,
+                "formatter": "{b}: {c} ({d}%)"
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "",
+                "DS0901009",
+                "DS0904148",
+                "DS0920014",
+                "AL0420082",
+                "DS0940017",
+                "AL0429016",
+                "SC1501003",
+                "DS0940023",
+                "QT2201004",
+                "AL0421027"
+            ],
+            "selected": {
+                "": true
+            },
+            "type": "scroll",
+            "show": false,
+            "left": "5%",
+            "top": "50%",
+            "orient": "vertical",
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "DS0901009",
+                "DS0904148",
+                "DS0920014",
+                "AL0420082",
+                "DS0940017",
+                "AL0429016",
+                "SC1501003",
+                "DS0940023",
+                "QT2201004",
+                "AL0421027"
+            ]
+        }
+    ],
+    "title": [
+                {
+                    "text": "销量Top10 - 店铺",
+                    "subtext": "销量Top10店铺总单量：77460单，占比总订单量：175862单，44.05%",
+                    "padding": 5,
+                    "itemGap": 10,
+                    "textStyle": {
+                        "color": "#434343",
+                        "fontSize": 18
+                    },
+                    subtextStyle: {
+                        color: '#CCCCCC',
+                        fontSize: 12
+                    },
+                }
+            ]
+
+
+};
+        chart_b24d8a00845045ec96f69d442d9a848f.setOption(option_b24d8a00845045ec96f69d442d9a848f);
+    </script>
+</body>
+</html>
