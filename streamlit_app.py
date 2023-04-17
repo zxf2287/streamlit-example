@@ -18,6 +18,7 @@ Created on Sat Apr 15 16:01:51 2023
 
 import pickle
 from pathlib import Path
+
 import sqlite3
 import pandas as pd
 import numpy as np
@@ -106,10 +107,15 @@ if authentication_status:
 
     # 左侧导航栏
     with st.sidebar:
-        choose = option_menu("页面展示", ["流程介绍", "运营数据", "波次策略", "产品分析", "关联分析", "审单进度", "其他应用"],
-                            icons=['house', 'bi bi-activity', 'bar-chart', 'bi bi-graph-up', 'bi bi-globe', 'bi bi-search', 'bi bi-list'],
+        choose = option_menu("数据可视化案例", ["运营数据", "波次策略", "产品分析", "关联分析", "审单进度", "项目介绍"],
+                            icons=['bi bi-activity', 'bar-chart', 'bi bi-graph-up', 'bi bi-globe', 'bi bi-search', 'house'],
                             menu_icon="bi bi-soundwave", default_index=0) #broadcast
     authenticator.logout("Logout", "sidebar")
+
+    if choose == '项目介绍':
+        st.subheader('开发：周笑丰')
+        st.subheader('邮箱：zxf2287@live.com')
+        st.header('数据可视化看板，非真实数据:sunglasses:')
 
     if choose == '运营数据':
         ## @st.cache
