@@ -18,8 +18,6 @@ Created on Sat Apr 15 16:01:51 2023
 
 import pickle
 from pathlib import Path
-
-import xlrd
 import sqlite3
 import pandas as pd
 import numpy as np
