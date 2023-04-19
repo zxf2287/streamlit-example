@@ -107,8 +107,8 @@ if authentication_status:
 
     # 左侧导航栏
     with st.sidebar:
-        choose = option_menu("数据可视化案例", ["运营数据", "波次策略", "产品分析", "关联分析", "审单进度", "项目介绍"],
-                            icons=['bi bi-activity', 'bar-chart', 'bi bi-graph-up', 'bi bi-globe', 'bi bi-search', 'house'],
+        choose = option_menu("数据中台", ["运营数据", "用户画像", "波次策略", "产品分析", "关联分析", "审单进度", "项目介绍"],
+                            icons=['bi bi-activity', 'bi bi-person', 'bar-chart', 'bi bi-graph-up', 'bi bi-globe', 'bi bi-search', 'house'],
                             menu_icon="bi bi-soundwave", default_index=0) #broadcast
     authenticator.logout("Logout", "sidebar")
 
@@ -126,7 +126,11 @@ if authentication_status:
         # components.html(text_a, height=5500)
         index_dc = open("./data_charts/index.html", encoding='utf-8')
         components.html(f"""{index_dc.read()}""", height=5500)
-
+        
+    if choose == '用户画像':
+        user_num = open("./data_charts/用户画像.html", encoding='utf-8')
+        components.html(f"""{user_num.read()}""", height=6300)
+        
     if choose == '波次策略':
         # # 右侧导航栏
         # selecte = option_menu(None, ["波次时间截点", "波次规则", "订单结构占比"],
