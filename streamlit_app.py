@@ -107,7 +107,7 @@ if authentication_status:
 
     # 左侧导航栏
     with st.sidebar:
-        choose = option_menu("数据中台", ["运营数据", "用户画像", "行为分析", "波次策略", "项目介绍"],
+        choose = option_menu("数据中台", ["运营数据", "用户画像", "行为分析", "波次策略", "智慧物流解决方案", "项目介绍"],
                             icons=['bi bi-activity', 'bi bi-person', 'bar-chart', 'bi bi-graph-up', 'bi bi-globe', 'bi bi-search', 'house'],
                             menu_icon="bi bi-soundwave", default_index=0) #broadcast
     authenticator.logout("Logout", "sidebar")
@@ -240,4 +240,7 @@ if authentication_status:
             # st.markdown( f"""{f.read()}""", unsafe_allow_html=True)
             components.html(f"""{f_order_top10.read()}""", height=500)
 
+    if choose == '智慧物流解决方案':
+        user_num = open("./data_charts/解决方案.html", encoding='utf-8')
+        components.html(f"""{user_num.read()}""", height=6300)
 
