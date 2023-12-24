@@ -242,5 +242,5 @@ if authentication_status:
 
     if choose == '智慧物流解决方案':
         user_num = open("./data_charts/解决方案.html", encoding='utf-8')
-        components.html(f"""{user_num.read()}""", height=10300)
+        components.html(f"""{user_num.read()}""", height=11300)
 
