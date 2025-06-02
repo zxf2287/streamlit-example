@@ -19,9 +19,9 @@ Created on Sat Apr 15 16:01:51 2023
 import pickle
 from pathlib import Path
 
-import sqlite3
-import pandas as pd
-import numpy as np
+# import sqlite3
+# import pandas as pd
+# import numpy as np
 
 import streamlit as st
 from streamlit_multipage import MultiPage
